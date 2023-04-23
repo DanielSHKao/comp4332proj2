@@ -14,6 +14,6 @@ To predict edges, we used a MLP model for binary classification, where 0 implies
 ```
 python train_mlp.py
 ```
-We also pretrained the model and saved it as ```edge_best_fc.pt``` in this repo.
+We also pretrained the model and saved it as ```edge_best_fc.pt``` in this repo. When training the MLP, we randomly generate a set of false edges that do not exist to balance the dataset with label 0.
 
 Our MLP model achieves accuracy 93.39% on binary classification. We extracted the score of edge by adding softmax function to the MLP logit, regarding the value of class 1 as the prediction score. Our approach achieves AUC 0.9711 on the validation dataset.
