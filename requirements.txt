@@ -1,0 +1,13 @@
+# conda create -n comp4332proj1 python=3.9.5
+# conda activate comp4332proj1
+# pip install -r requirements.txt
+# ----------------------------------------
+torch==1.12.0+cu102
+pytorch-lightning==1.6.5
+lightning-bolts==0.5.0
+numpy==1.23.3
+pandas==1.4.4
+gensim==4.3.1
+
+# package location
+--extra-index-url https://download.pytorch.org/whl/cu102
