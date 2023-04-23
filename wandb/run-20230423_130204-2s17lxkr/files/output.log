@@ -1,0 +1,38 @@
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:611: UserWarning: Checkpoint directory /home/daniel/comp4332_project2/checkpoints exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+Sanity Checking: 0it [00:00, ?it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name      | Type               | Params
+-------------------------------------------------
+0 | fc        | customMLP          | 296 K
+1 | criterion | CrossEntropyLoss   | 0
+2 | acc       | MulticlassAccuracy | 0
+-------------------------------------------------
+296 K     Trainable params
+0         Non-trainable params
+296 K     Total params
+1.188     Total estimated model params size (MB)
+/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:495: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+
+
+
+Epoch 0:  84%|██████████████████████████████████████████████████▏         | 782/936 [00:07<00:01, 104.40it/s, loss=0.643, v_num=lxkr]
+
+Validation: 0it [00:00, ?it/s]
+
+
+
+Epoch 1:  88%|█████████████▏ | 824/936 [00:08<00:01, 97.57it/s, loss=0.611, v_num=lxkr, val_loss=0.644, val_acc=0.750, val_auc=0.833]
+
+Validation DataLoader 0:  27%|██████████████████▊                                                  | 42/154 [00:00<00:00, 171.43it/s]
+
+
+
+Epoch 2:  81%|███████████▎  | 755/936 [00:07<00:01, 103.63it/s, loss=0.569, v_num=lxkr, val_loss=0.608, val_acc=0.774, val_auc=0.858]
+
+
+

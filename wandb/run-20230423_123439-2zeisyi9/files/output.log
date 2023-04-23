@@ -1,0 +1,191 @@
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:611: UserWarning: Checkpoint directory /home/daniel/comp4332_project2/checkpoints exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+Sanity Checking:   0%|                                                                                         | 0/2 [00:00<?, ?it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name      | Type               | Params
+-------------------------------------------------
+0 | fc        | customMLP          | 296 K
+1 | criterion | CrossEntropyLoss   | 0
+2 | acc       | MulticlassAccuracy | 0
+-------------------------------------------------
+296 K     Trainable params
+0         Non-trainable params
+296 K     Total params
+1.188     Total estimated model params size (MB)
+/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:495: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+
+
+
+Epoch 0:  84%|███████████████████████████████████████████████████▊          | 782/936 [00:07<00:01, 103.01it/s, loss=0.645, v_num=22]
+
+Validation: 0it [00:00, ?it/s]
+
+
+
+Epoch 1:  91%|███████████████▍ | 848/936 [00:08<00:00, 98.90it/s, loss=0.615, v_num=22, val_loss=0.644, val_acc=0.751, val_auc=0.832]
+Validation DataLoader 0:  43%|█████████████████████████████▌                                       | 66/154 [00:00<00:00, 157.06it/s]
+
+
+
+
+Epoch 2:  99%|███████████████▊| 924/936 [00:09<00:00, 101.45it/s, loss=0.563, v_num=22, val_loss=0.607, val_acc=0.775, val_auc=0.858]
+Validation DataLoader 0:  92%|██████████████████████████████████████████████████████████████▋     | 142/154 [00:00<00:00, 156.07it/s]
+
+
+
+
+Epoch 3:  83%|██████████████▏  | 781/936 [00:07<00:01, 99.36it/s, loss=0.509, v_num=22, val_loss=0.563, val_acc=0.792, val_auc=0.882]
+
+
+
+
+Epoch 4:  86%|██████████████▌  | 801/936 [00:08<00:01, 95.57it/s, loss=0.433, v_num=22, val_loss=0.506, val_acc=0.827, val_auc=0.904]
+Validation DataLoader 0:  12%|████████▌                                                            | 19/154 [00:00<00:01, 119.02it/s]
+
+
+
+
+Epoch 5:  94%|███████████████▉ | 876/936 [00:08<00:00, 98.91it/s, loss=0.384, v_num=22, val_loss=0.444, val_acc=0.856, val_auc=0.922]
+Validation DataLoader 0:  61%|██████████████████████████████████████████                           | 94/154 [00:00<00:00, 146.85it/s]
+
+
+
+
+Epoch 6:  83%|██████████████   | 776/936 [00:07<00:01, 97.98it/s, loss=0.333, v_num=22, val_loss=0.388, val_acc=0.877, val_auc=0.936]
+
+
+
+
+Epoch 7:  84%|██████████████▏  | 782/936 [00:08<00:01, 96.44it/s, loss=0.295, v_num=22, val_loss=0.345, val_acc=0.890, val_auc=0.945]
+Validation: 0it [00:00, ?it/s]
+
+
+
+
+Epoch 8:  90%|███████████████▎ | 844/936 [00:08<00:00, 95.59it/s, loss=0.271, v_num=22, val_loss=0.318, val_acc=0.897, val_auc=0.950]
+Validation DataLoader 0:  40%|███████████████████████████▊                                         | 62/154 [00:00<00:00, 144.84it/s]
+
+
+
+
+Epoch 9:  99%|███████████████▉| 930/936 [00:09<00:00, 100.53it/s, loss=0.248, v_num=22, val_loss=0.301, val_acc=0.900, val_auc=0.952]
+Validation DataLoader 0:  96%|█████████████████████████████████████████████████████████████████▎  | 148/154 [00:01<00:00, 146.35it/s]
+
+
+
+Epoch 10:  86%|█████████████▋  | 803/936 [00:08<00:01, 99.53it/s, loss=0.228, v_num=22, val_loss=0.290, val_acc=0.902, val_auc=0.954]
+Validation DataLoader 0:  14%|█████████▍                                                           | 21/154 [00:00<00:00, 134.14it/s]
+
+
+
+
+Epoch 11:  93%|███████████████▊ | 872/936 [00:08<00:00, 97.63it/s, loss=0.22, v_num=22, val_loss=0.283, val_acc=0.903, val_auc=0.956]
+Validation DataLoader 0:  58%|████████████████████████████████████████▎                            | 90/154 [00:00<00:00, 148.03it/s]
+
+
+
+
+Epoch 12:  97%|███████████████▍| 906/936 [00:09<00:00, 97.08it/s, loss=0.217, v_num=22, val_loss=0.279, val_acc=0.904, val_auc=0.957]
+Validation DataLoader 0:  81%|██████████████████████████████████████████████████████▊             | 124/154 [00:00<00:00, 107.19it/s]
+
+
+
+
+Epoch 13:  83%|█████████████▎  | 781/936 [00:07<00:01, 99.95it/s, loss=0.203, v_num=22, val_loss=0.275, val_acc=0.906, val_auc=0.958]
+
+
+
+
+Epoch 14:  89%|██████████████▎ | 837/936 [00:08<00:01, 97.48it/s, loss=0.203, v_num=22, val_loss=0.272, val_acc=0.908, val_auc=0.960]
+Validation DataLoader 0:  36%|████████████████████████▋                                            | 55/154 [00:00<00:00, 145.59it/s]
+
+
+
+
+Epoch 15:  95%|███████████████▏| 885/936 [00:09<00:00, 97.85it/s, loss=0.184, v_num=22, val_loss=0.268, val_acc=0.910, val_auc=0.961]
+Validation DataLoader 0:  67%|█████████████████████████████████████████████▍                      | 103/154 [00:00<00:00, 156.05it/s]
+
+
+
+
+
+Epoch 17:   0%|                  | 2/936 [00:00<02:43,  5.71it/s, loss=0.188, v_num=22, val_loss=0.263, val_acc=0.914, val_auc=0.962]
+
+
+
+Epoch 17:  84%|████████████▌  | 782/936 [00:07<00:01, 100.68it/s, loss=0.171, v_num=22, val_loss=0.263, val_acc=0.914, val_auc=0.962]
+Validation: 0it [00:00, ?it/s]
+
+
+
+
+Epoch 18:  92%|█████████████▊ | 860/936 [00:08<00:00, 100.64it/s, loss=0.182, v_num=22, val_loss=0.263, val_acc=0.914, val_auc=0.963]
+Validation DataLoader 0:  51%|██████████████████████████████████▉                                  | 78/154 [00:00<00:00, 164.75it/s]
+
+
+
+
+Epoch 19:  99%|███████████████▊| 928/936 [00:09<00:00, 96.85it/s, loss=0.157, v_num=22, val_loss=0.258, val_acc=0.917, val_auc=0.963]
+Validation DataLoader 0:  95%|████████████████████████████████████████████████████████████████▍   | 146/154 [00:01<00:00, 119.45it/s]
+
+
+
+Epoch 20:  84%|████████████▌  | 782/936 [00:07<00:01, 100.71it/s, loss=0.153, v_num=22, val_loss=0.259, val_acc=0.917, val_auc=0.964]
+Validation: 0it [00:00, ?it/s]
+
+
+
+
+Epoch 21:  91%|██████████████▌ | 849/936 [00:08<00:00, 98.50it/s, loss=0.151, v_num=22, val_loss=0.257, val_acc=0.918, val_auc=0.965]
+Validation DataLoader 0:  44%|██████████████████████████████                                       | 67/154 [00:00<00:00, 164.43it/s]
+
+
+
+
+
+Epoch 22: 100%|███████████████| 936/936 [00:09<00:00, 101.66it/s, loss=0.166, v_num=22, val_loss=0.254, val_acc=0.921, val_auc=0.966]
+
+
+
+Epoch 23:  84%|████████████▌  | 782/936 [00:07<00:01, 100.54it/s, loss=0.154, v_num=22, val_loss=0.254, val_acc=0.921, val_auc=0.966]
+
+Validation: 0it [00:00, ?it/s]
+
+
+
+Epoch 24:  91%|██████████████▍ | 848/936 [00:08<00:00, 96.87it/s, loss=0.146, v_num=22, val_loss=0.256, val_acc=0.920, val_auc=0.966]
+Validation DataLoader 0:  43%|█████████████████████████████▌                                       | 66/154 [00:00<00:00, 156.66it/s]
+
+
+
+
+Epoch 25:  96%|███████████████▎| 895/936 [00:09<00:00, 98.07it/s, loss=0.142, v_num=22, val_loss=0.252, val_acc=0.922, val_auc=0.967]
+Validation DataLoader 0:  74%|██████████████████████████████████████████████████▎                 | 114/154 [00:00<00:00, 139.62it/s]
+
+
+
+
+
+Epoch 27:   0%|                   | 2/936 [00:00<02:50,  5.49it/s, loss=0.14, v_num=22, val_loss=0.251, val_acc=0.923, val_auc=0.967]
+
+
+
+Epoch 27:  84%|████████████▌  | 782/936 [00:07<00:01, 100.53it/s, loss=0.132, v_num=22, val_loss=0.251, val_acc=0.923, val_auc=0.967]
+Validation: 0it [00:00, ?it/s]
+
+
+
+
+Epoch 28:  90%|██████████████▍ | 843/936 [00:08<00:00, 97.97it/s, loss=0.145, v_num=22, val_loss=0.250, val_acc=0.924, val_auc=0.968]
+Validation DataLoader 0:  40%|███████████████████████████▎                                         | 61/154 [00:00<00:00, 165.77it/s]
+
+
+
+
+Epoch 29:  96%|███████████████▎| 895/936 [00:09<00:00, 98.45it/s, loss=0.133, v_num=22, val_loss=0.253, val_acc=0.924, val_auc=0.968]
+Validation DataLoader 0:  73%|█████████████████████████████████████████████████▉                  | 113/154 [00:00<00:00, 145.45it/s]
+

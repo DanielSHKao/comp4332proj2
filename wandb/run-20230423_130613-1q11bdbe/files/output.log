@@ -1,0 +1,96 @@
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:611: UserWarning: Checkpoint directory /home/daniel/comp4332_project2/checkpoints exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+Sanity Checking: 0it [00:00, ?it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name      | Type               | Params
+-------------------------------------------------
+0 | fc        | customMLP          | 296 K
+1 | criterion | CrossEntropyLoss   | 0
+2 | acc       | MulticlassAccuracy | 0
+-------------------------------------------------
+296 K     Trainable params
+0         Non-trainable params
+296 K     Total params
+1.188     Total estimated model params size (MB)
+/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:495: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+
+
+
+Epoch 0:  84%|██████████████████████████████████████████████████▏         | 782/936 [00:07<00:01, 104.58it/s, loss=0.644, v_num=bdbe]
+
+Validation: 0it [00:00, ?it/s]
+
+
+
+Epoch 1:  90%|█████████████▌ | 846/936 [00:08<00:00, 99.06it/s, loss=0.611, v_num=bdbe, val_loss=0.644, val_acc=0.748, val_auc=0.830]
+Validation DataLoader 0:  42%|████████████████████████████▋                                        | 64/154 [00:00<00:00, 162.87it/s]
+
+
+
+
+Epoch 2:  98%|██████████████▋| 917/936 [00:09<00:00, 99.83it/s, loss=0.565, v_num=bdbe, val_loss=0.607, val_acc=0.773, val_auc=0.857]
+Validation DataLoader 0:  88%|███████████████████████████████████████████████████████████▌        | 135/154 [00:00<00:00, 150.79it/s]
+
+
+
+Epoch 3:  84%|████████████▌  | 786/936 [00:08<00:01, 97.87it/s, loss=0.517, v_num=bdbe, val_loss=0.563, val_acc=0.792, val_auc=0.881]
+Validation DataLoader 0:   3%|█▊                                                                     | 4/154 [00:00<00:01, 76.35it/s]
+
+
+
+
+Epoch 4:  90%|█████████████▍ | 842/936 [00:08<00:00, 97.80it/s, loss=0.438, v_num=bdbe, val_loss=0.507, val_acc=0.826, val_auc=0.903]
+Validation DataLoader 0:  39%|██████████████████████████▉                                          | 60/154 [00:00<00:00, 161.39it/s]
+
+
+
+
+Epoch 5:  99%|█████████████▉| 931/936 [00:09<00:00, 100.85it/s, loss=0.378, v_num=bdbe, val_loss=0.445, val_acc=0.852, val_auc=0.921]
+Validation DataLoader 0:  97%|█████████████████████████████████████████████████████████████████▊  | 149/154 [00:01<00:00, 152.61it/s]
+
+
+
+Epoch 6:  84%|███████████▋  | 782/936 [00:07<00:01, 101.08it/s, loss=0.325, v_num=bdbe, val_loss=0.390, val_acc=0.874, val_auc=0.935]
+Validation: 0it [00:00, ?it/s]
+
+
+
+
+Epoch 7:  92%|█████████████▋ | 857/936 [00:08<00:00, 97.79it/s, loss=0.292, v_num=bdbe, val_loss=0.347, val_acc=0.888, val_auc=0.944]
+Validation DataLoader 0:  49%|█████████████████████████████████▌                                   | 75/154 [00:00<00:00, 162.87it/s]
+
+
+
+
+
+Epoch 9:   0%|                         | 0/936 [00:00<?, ?it/s, loss=0.268, v_num=bdbe, val_loss=0.303, val_acc=0.900, val_auc=0.952]
+
+
+
+Epoch 9:  84%|████████████▌  | 782/936 [00:07<00:01, 98.57it/s, loss=0.252, v_num=bdbe, val_loss=0.303, val_acc=0.900, val_auc=0.952]
+Validation: 0it [00:00, ?it/s]
+
+
+
+
+Epoch 10:  92%|████████████▊ | 859/936 [00:08<00:00, 97.54it/s, loss=0.234, v_num=bdbe, val_loss=0.292, val_acc=0.902, val_auc=0.954]
+Validation DataLoader 0:  50%|██████████████████████████████████▌                                  | 77/154 [00:00<00:00, 162.01it/s]
+
+
+
+
+
+Epoch 12:   0%|                        | 0/936 [00:00<?, ?it/s, loss=0.226, v_num=bdbe, val_loss=0.281, val_acc=0.904, val_auc=0.957]
+
+
+
+Epoch 12:  84%|███████████▊  | 787/936 [00:08<00:01, 93.32it/s, loss=0.215, v_num=bdbe, val_loss=0.281, val_acc=0.904, val_auc=0.957]
+Validation DataLoader 0:   3%|██▎                                                                   | 5/154 [00:00<00:01, 113.67it/s]
+
+
+
+

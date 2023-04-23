@@ -1,0 +1,39 @@
+2023-04-23 12:33:39,673 INFO    MainThread:6455 [wandb_setup.py:_flush():76] Configure stats pid to 6455
+2023-04-23 12:33:39,674 INFO    MainThread:6455 [wandb_setup.py:_flush():76] Loading settings from /home/daniel/.config/wandb/settings
+2023-04-23 12:33:39,674 INFO    MainThread:6455 [wandb_setup.py:_flush():76] Loading settings from /home/daniel/comp4332_project2/wandb/settings
+2023-04-23 12:33:39,674 INFO    MainThread:6455 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True'}
+2023-04-23 12:33:39,674 INFO    MainThread:6455 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'predict_testing_file.py', 'program': '/home/daniel/comp4332_project2/predict_testing_file.py'}
+2023-04-23 12:33:39,674 INFO    MainThread:6455 [wandb_init.py:_log_setup():461] Logging user logs to /home/daniel/comp4332_project2/wandb/run-20230423_123339-1c3kvg1m/logs/debug.log
+2023-04-23 12:33:39,674 INFO    MainThread:6455 [wandb_init.py:_log_setup():462] Logging internal logs to /home/daniel/comp4332_project2/wandb/run-20230423_123339-1c3kvg1m/logs/debug-internal.log
+2023-04-23 12:33:39,675 INFO    MainThread:6455 [wandb_init.py:init():495] calling init triggers
+2023-04-23 12:33:39,675 INFO    MainThread:6455 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {}
+2023-04-23 12:33:39,676 INFO    MainThread:6455 [wandb_init.py:init():548] starting backend
+2023-04-23 12:33:39,676 INFO    MainThread:6455 [wandb_init.py:init():552] setting up manager
+2023-04-23 12:33:39,682 INFO    MainThread:6455 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-04-23 12:33:39,685 INFO    MainThread:6455 [wandb_init.py:init():558] backend started and connected
+2023-04-23 12:33:39,690 INFO    MainThread:6455 [wandb_init.py:init():634] updated telemetry
+2023-04-23 12:33:39,691 INFO    MainThread:6455 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2023-04-23 12:33:40,306 INFO    MainThread:6455 [wandb_run.py:_on_init():1919] communicating current version
+2023-04-23 12:33:40,670 INFO    MainThread:6455 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.15.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-04-23 12:33:40,670 INFO    MainThread:6455 [wandb_init.py:init():700] starting run threads in backend
+2023-04-23 12:33:40,952 WARNING MainThread:6455 [wandb_init.py:init():1064] interrupted
+Traceback (most recent call last):
+  File "/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1043, in init
+    run = wi.init()
+  File "/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 711, in init
+    _ = backend.interface.communicate_run_start(run_obj)
+  File "/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 234, in communicate_run_start
+    result = self._communicate_run_start(run_start)
+  File "/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 440, in _communicate_run_start
+    result = self._communicate(rec)
+  File "/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 226, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/site-packages/wandb/sdk/interface/router.py", line 37, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/threading.py", line 574, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

@@ -1,0 +1,194 @@
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:611: UserWarning: Checkpoint directory /home/daniel/comp4332_project2/checkpoints exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name      | Type               | Params
+-------------------------------------------------
+0 | fc        | customMLP          | 297 K
+1 | criterion | CrossEntropyLoss   | 0
+2 | acc       | MulticlassAccuracy | 0
+-------------------------------------------------
+297 K     Trainable params
+0         Non-trainable params
+297 K     Total params
+1.188     Total estimated model params size (MB)
+/home/daniel/miniconda3/envs/comp4332proj1/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:495: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+
+
+
+
+Epoch 0:  80%|███████████████████████████████████████████████████             | 747/936 [00:07<00:01, 98.98it/s, loss=0.57, v_num=20]
+
+
+
+
+Epoch 1:  90%|███████████████▎ | 844/936 [00:08<00:00, 98.55it/s, loss=0.443, v_num=20, val_loss=0.561, val_acc=0.803, val_auc=0.884]
+Validation DataLoader 0:  41%|████████████████████████████▏                                        | 63/154 [00:00<00:00, 154.94it/s]
+
+
+
+
+Epoch 2:  95%|████████████████ | 885/936 [00:09<00:00, 96.02it/s, loss=0.338, v_num=20, val_loss=0.444, val_acc=0.848, val_auc=0.919]
+Validation DataLoader 0:  67%|█████████████████████████████████████████████▍                      | 103/154 [00:00<00:00, 130.89it/s]
+
+
+
+
+
+Epoch 4:   0%|                           | 0/936 [00:00<?, ?it/s, loss=0.305, v_num=20, val_loss=0.327, val_acc=0.877, val_auc=0.942]
+
+
+
+Epoch 4:  84%|██████████████▏  | 782/936 [00:08<00:01, 96.92it/s, loss=0.262, v_num=20, val_loss=0.327, val_acc=0.877, val_auc=0.942]
+Validation: 0it [00:00, ?it/s]
+
+
+
+
+Epoch 5:  84%|██████████████▏  | 782/936 [00:08<00:01, 96.53it/s, loss=0.255, v_num=20, val_loss=0.309, val_acc=0.883, val_auc=0.946]
+Validation DataLoader 0:   0%|                                                                               | 0/154 [00:00<?, ?it/s]
+
+
+
+
+Epoch 6:  87%|██████████████▊  | 814/936 [00:08<00:01, 92.79it/s, loss=0.234, v_num=20, val_loss=0.297, val_acc=0.889, val_auc=0.950]
+Validation DataLoader 0:  21%|██████████████▎                                                      | 32/154 [00:00<00:00, 139.26it/s]
+
+
+
+
+Epoch 7:  94%|████████████████ | 881/936 [00:09<00:00, 97.66it/s, loss=0.219, v_num=20, val_loss=0.287, val_acc=0.895, val_auc=0.954]
+Validation DataLoader 0:  64%|████████████████████████████████████████████▎                        | 99/154 [00:00<00:00, 153.88it/s]
+
+
+
+
+Epoch 8:  99%|████████████████▊| 923/936 [00:09<00:00, 97.21it/s, loss=0.205, v_num=20, val_loss=0.279, val_acc=0.900, val_auc=0.956]
+Validation DataLoader 0:  92%|██████████████████████████████████████████████████████████████▎     | 141/154 [00:01<00:00, 117.77it/s]
+
+
+
+
+
+Epoch 10:   1%|▏                 | 9/936 [00:00<00:44, 21.04it/s, loss=0.187, v_num=20, val_loss=0.265, val_acc=0.909, val_auc=0.961]
+
+
+
+Epoch 10:  84%|█████████████▎  | 782/936 [00:08<00:01, 96.57it/s, loss=0.176, v_num=20, val_loss=0.265, val_acc=0.909, val_auc=0.961]
+Validation DataLoader 0:   0%|                                                                               | 0/154 [00:00<?, ?it/s]
+
+
+
+
+Epoch 11:  87%|█████████████▉  | 815/936 [00:08<00:01, 93.18it/s, loss=0.174, v_num=20, val_loss=0.263, val_acc=0.912, val_auc=0.963]
+Validation DataLoader 0:  21%|██████████████▊                                                      | 33/154 [00:00<00:00, 139.44it/s]
+
+
+
+
+Epoch 12:  90%|██████████████▍ | 841/936 [00:09<00:01, 92.80it/s, loss=0.163, v_num=20, val_loss=0.260, val_acc=0.915, val_auc=0.963]
+Validation DataLoader 0:  38%|██████████████████████████▍                                          | 59/154 [00:00<00:00, 165.29it/s]
+
+
+
+
+Epoch 13:  94%|██████████████▉ | 877/936 [00:09<00:00, 95.89it/s, loss=0.164, v_num=20, val_loss=0.256, val_acc=0.916, val_auc=0.965]
+Validation DataLoader 0:  62%|██████████████████████████████████████████▌                          | 95/154 [00:00<00:00, 153.01it/s]
+
+
+
+
+Epoch 14:  97%|███████████████▍| 904/936 [00:09<00:00, 95.08it/s, loss=0.164, v_num=20, val_loss=0.257, val_acc=0.918, val_auc=0.965]
+Validation DataLoader 0:  79%|█████████████████████████████████████████████████████▊              | 122/154 [00:00<00:00, 157.80it/s]
+
+
+
+
+
+Epoch 16:   0%|                          | 0/936 [00:00<?, ?it/s, loss=0.153, v_num=20, val_loss=0.253, val_acc=0.920, val_auc=0.966]
+
+
+
+Epoch 16:  84%|█████████████▎  | 782/936 [00:08<00:01, 97.67it/s, loss=0.149, v_num=20, val_loss=0.253, val_acc=0.920, val_auc=0.966]
+Validation: 0it [00:00, ?it/s]
+
+
+
+
+Epoch 17:  84%|█████████████▎  | 782/936 [00:08<00:01, 95.16it/s, loss=0.147, v_num=20, val_loss=0.249, val_acc=0.922, val_auc=0.967]
+Validation: 0it [00:00, ?it/s]
+
+
+
+
+Epoch 18:  88%|██████████████▏ | 827/936 [00:08<00:01, 95.51it/s, loss=0.161, v_num=20, val_loss=0.255, val_acc=0.923, val_auc=0.967]
+Validation DataLoader 0:  29%|████████████████████▏                                                | 45/154 [00:00<00:00, 114.53it/s]
+
+
+
+
+Epoch 19:  91%|██████████████▌ | 853/936 [00:09<00:00, 93.42it/s, loss=0.134, v_num=20, val_loss=0.251, val_acc=0.923, val_auc=0.968]
+Validation DataLoader 0:  46%|███████████████████████████████▊                                     | 71/154 [00:00<00:00, 167.11it/s]
+
+
+
+
+Epoch 20:  93%|██████████████▊ | 870/936 [00:09<00:00, 94.21it/s, loss=0.128, v_num=20, val_loss=0.254, val_acc=0.924, val_auc=0.968]
+Validation DataLoader 0:  57%|███████████████████████████████████████▍                             | 88/154 [00:00<00:00, 159.23it/s]
+
+
+
+
+Epoch 21:  98%|███████████████▋| 918/936 [00:09<00:00, 94.53it/s, loss=0.135, v_num=20, val_loss=0.245, val_acc=0.925, val_auc=0.969]
+Validation DataLoader 0:  88%|████████████████████████████████████████████████████████████        | 136/154 [00:01<00:00, 120.60it/s]
+
+
+
+Epoch 22:  84%|█████████████▍  | 789/936 [00:08<00:01, 93.68it/s, loss=0.135, v_num=20, val_loss=0.250, val_acc=0.926, val_auc=0.969]
+
+Validation DataLoader 0:   5%|███▏                                                                  | 7/154 [00:00<00:01, 145.53it/s]
+
+
+
+Epoch 23:  91%|██████████████▌ | 850/936 [00:08<00:00, 95.37it/s, loss=0.133, v_num=20, val_loss=0.252, val_acc=0.925, val_auc=0.969]
+
+Validation DataLoader 0:  44%|██████████████████████████████▍                                      | 68/154 [00:00<00:00, 163.45it/s]
+
+
+
+Epoch 24:  92%|██████████████▋ | 860/936 [00:09<00:00, 95.12it/s, loss=0.141, v_num=20, val_loss=0.253, val_acc=0.927, val_auc=0.969]
+Validation DataLoader 0:  51%|██████████████████████████████████▉                                  | 78/154 [00:00<00:00, 162.57it/s]
+
+
+
+
+Epoch 25:  97%|███████████████▍| 905/936 [00:09<00:00, 95.14it/s, loss=0.136, v_num=20, val_loss=0.253, val_acc=0.926, val_auc=0.969]
+Validation DataLoader 0:  80%|██████████████████████████████████████████████████████▎             | 123/154 [00:01<00:00, 137.72it/s]
+
+
+
+
+
+Epoch 27:   0%|                           | 0/936 [00:00<?, ?it/s, loss=0.13, v_num=20, val_loss=0.250, val_acc=0.927, val_auc=0.970]
+
+
+
+
+
+Epoch 28:   0%|                           | 0/936 [00:00<?, ?it/s, loss=0.13, v_num=20, val_loss=0.250, val_acc=0.928, val_auc=0.970]
+
+
+
+Epoch 28:  84%|█████████████▍  | 785/936 [00:08<00:01, 92.85it/s, loss=0.135, v_num=20, val_loss=0.250, val_acc=0.928, val_auc=0.970]
+
+Validation DataLoader 0:   2%|█▍                                                                     | 3/154 [00:00<00:02, 58.75it/s]
+
+
+
+Epoch 29:  88%|██████████████▏ | 827/936 [00:08<00:01, 94.51it/s, loss=0.118, v_num=20, val_loss=0.247, val_acc=0.929, val_auc=0.970]
+Validation DataLoader 0:  29%|████████████████████▏                                                | 45/154 [00:00<00:00, 146.28it/s]
+
