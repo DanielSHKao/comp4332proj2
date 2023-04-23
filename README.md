@@ -2,7 +2,16 @@
 This repo is created by Shiu-hong Kao and Shi-heng Lo for COMP4332 Project 2 in Spring 2023.
 
 ## Quickstart
-Pull the repo to your local computer.
+Create a conda virtual environment.
+```
+conda create -n comp4332proj2 python=3.9.12 -y
+conda activate comp4332proj2
+```
+Pull the repo to your local computer and install the requirement packages.
+```
+git clone https://github.com/DanielSHKao/comp4332proj2
+pip install -r requirements.txt
+```
 
 `node_embed.py` includes the random walk algorithm and trains the word2vec model. To start with, type
 ```
