@@ -16,4 +16,4 @@ python train_mlp.py
 ```
 We also pretrained the model and saved it as ```edge_best_fc.pt``` in this repo.
 
-After training the repo, we highlight that we can obtain the score of edge by adding softmax function to the MLP logit and extracting the value of class 1.
+Our MLP model achieves accuracy 93.39% on binary classification. We extracted the score of edge by adding softmax function to the MLP logit, regarding the value of class 1 as the prediction score. Our approach achieves AUC 0.9711 on the validation dataset.
