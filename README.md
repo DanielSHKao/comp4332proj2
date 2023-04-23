@@ -16,4 +16,4 @@ python train_mlp.py
 ```
 We also pretrained the model and saved it as ```edge_best_fc.pt``` in this repo.
 
-After training the repo, we highlight that we can obtain the score of edge by adding softmax function to the MLP logit and extract the value of class 1.
+After training the repo, we highlight that we can obtain the score of edge by adding softmax function to the MLP logit and extracting the value of class 1.
