@@ -499,4 +499,4 @@ trainer = Trainer(
 mlp.datamodule=dm
 trainer.fit(mlp,dm)
 #trainer.test(mlp,datamodule=dm,ckpt_path="best")
-torch.save(mlp.fc,f"edge_best_fc5.pt")
+torch.save(mlp.fc,f"edge_best_fc.pt")
