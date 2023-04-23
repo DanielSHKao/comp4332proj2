@@ -426,7 +426,7 @@ from pytorch_lightning.callbacks import LearningRateMonitor,ModelCheckpoint
 from pl_bolts.optimizers.lr_scheduler import LinearWarmupCosineAnnealingLR
 import torch.nn.functional as F
 from gensim.models import Word2Vec
-from pytorch_lightning.loggers import WandbLogger
+#from pytorch_lightning.loggers import WandbLogger
 seed_everything(0)
 class EdgeClassifier(pl.LightningModule):
     def __init__(self, lr):
@@ -482,7 +482,7 @@ class EdgeClassifier(pl.LightningModule):
 w2v_model = Word2Vec.load("word2vec.model")
 mlp = EdgeClassifier(0.1)
 dm = NetworkDataModule(w2v_model,train_edges,valid_edges,test_edges,train_false_edges,valid_false_edges,128,8)
-wandb_logger = WandbLogger(name=f"MLP_512x2",project="comp4332 project2")
+#wandb_logger = WandbLogger(name=f"MLP_512x2",project="comp4332 project2")
 checkpoint_callback = ModelCheckpoint(dirpath="checkpoints", # where the ckpt will be saved
                                       filename=f"mlp_best", # the name of the best ckpt
                                       save_top_k=1, # save only the best ckpt
@@ -493,7 +493,7 @@ checkpoint_callback = ModelCheckpoint(dirpath="checkpoints", # where the ckpt wi
 trainer = Trainer(
     max_epochs=40,
     gpus=[0],
-    logger=wandb_logger,
+    #logger=wandb_logger,
     callbacks=[checkpoint_callback,LearningRateMonitor(logging_interval="step")],
 )
 mlp.datamodule=dm
