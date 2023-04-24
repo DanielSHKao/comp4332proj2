@@ -1,4 +1,4 @@
-# comp4332proj2
+# COMP4332 Project 2 - Social Network Mining
 This repo is created by Shiu-hong Kao and Shi-heng Lo for COMP4332 Project 2 in Spring 2023.
 
 ## Quickstart
@@ -26,3 +26,9 @@ python train_mlp.py
 We also pretrained the model and saved it as ```edge_best_fc.pt``` in this repo. When training the MLP, we randomly generate a set of false edges that do not exist to balance the dataset with label 0.
 
 Our MLP model achieves accuracy 93.39% on binary classification. We extracted the score of edge by adding softmax function to the MLP logit, regarding the value of class 1 as the prediction score. Our approach achieves AUC 0.9711 on the validation dataset.
+
+For prediction, the following command will generate `data/pred.csv` based on `data/test.csv`.
+```
+python get_test_score.py
+```
+We have pre-processed this and stored the result in `./data/`.
