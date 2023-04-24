@@ -38,5 +38,5 @@ python get_test_score.py
 ```
 We have pre-processed this and stored the result in `./data/`.
 
-# Technical Reort
+## Technical Reort
 Find the report at `COMP4332 Project 2 Report - Social Network Mining.pdf`.
