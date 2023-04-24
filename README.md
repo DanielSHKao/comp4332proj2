@@ -37,3 +37,6 @@ For prediction, the following command will generate `data/pred.csv` based on `da
 python get_test_score.py
 ```
 We have pre-processed this and stored the result in `./data/`.
+
+# Technical Reort
+Find the report at `COMP4332 Project 2 Report - Social Network Mining.pdf`.
