@@ -1,4 +1,4 @@
-# comp4332proj2
+# COMP4332 Project 2 - Social Network Mining
 This repo is created by Shiu-hong Kao and Shi-heng Lo for COMP4332 Project 2 in Spring 2023.
 
 ## Quickstart
@@ -31,4 +31,4 @@ For prediction, the following command will generate `data/pred.csv` based on `da
 ```
 python get_test_score.py
 ```
-We have pre-processed this and stored the result in `./data/`
+We have pre-processed this and stored the result in `./data/`.
