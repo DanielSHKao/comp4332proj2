@@ -13,11 +13,16 @@ git clone https://github.com/DanielSHKao/comp4332proj2
 pip install -r requirements.txt
 ```
 
-`node_embed.py` includes the random walk algorithm and trains the word2vec model. To start with, type
+`node_embed.py` trains a word2vec model and saves it in the directory. To start with, type
 ```
 python node_embed.py
 ```
 in the terminal to obtain the embedding model, which was pretrained and saved as `word2vec.model` in this repo.
+
+To visualize the embedding effects, run the following command.
+```
+python pca.py
+```
 
 To predict edges, we used a MLP model for binary classification, where 0 implies that edge doesn't exist and 1 represents the existence. To train the model, run the following command.
 ```
